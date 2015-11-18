@@ -24,6 +24,7 @@
 				color: white;
 			}
 		</style>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	</head>
 
 	<body>
@@ -31,5 +32,10 @@
 		<p>Hi! I'm Anna Downlin, a NYC-based marketer.Say hello!</p>
 		<input id="email" type="email" value="Your email">
 		<input type="submit">
+		<script type="text/javascript">
+			$("#email").focus(function(){
+				$(this).val('');
+			});
+		</script>
 	</body>
 </html>
