@@ -47,6 +47,7 @@
 			}
 			button {
 				border-radius: 10px;
+				background-color: rgba(14, 6, 0, 0.22);
 			}
 		</style>
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -82,6 +83,10 @@
 		<button>Like</button>
 		</article>
 		</div>
-		<script>$("button").on("click", function(){alert("clicked!")})</script>
+		<script>
+			function onHoverIn() {$(this).css('background-color', 'rgba(26, 13, 3, 0.06)')};
+			function onHoverOut() {$(this).css('background-color', 'rgba(14, 6, 0, 0.22)')};
+			$("button").hover(onHoverIn, onHoverOut);
+		</script>
 	</body>
 </html>
