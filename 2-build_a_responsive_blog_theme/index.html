@@ -42,6 +42,9 @@
 					padding: 5px;
 				}
 			}
+			button {
+				background-color: rgba(14, 6, 0, 0.22);
+			}
 		</style>
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	</head>
@@ -73,6 +76,10 @@
 		<p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic Cosby sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
 		<button>Like</button>
 		</article>
-		<script>$("button").on("click", function(){alert("clicked!")})</script>
+		<script>
+			function onHoverIn() {$(this).css('background-color', 'rgba(26, 13, 3, 0.06)')};
+			function onHoverOut() {$(this).css('background-color', 'rgba(14, 6, 0, 0.22)')};
+			$("button").hover(onHoverIn, onHoverOut);
+		</script>
 	</body>
 </html>
